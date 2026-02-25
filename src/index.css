@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@import "./pages/Universe1/universe1.css";
+
+@theme {
+  --color-space: #060318;
+}
