@@ -1,9 +1,4 @@
-import {
-  Fit,
-  Layout,
-  useRive,
-  useViewModelInstanceBoolean,
-} from "@rive-app/react-webgl2";
+import { useRive, useViewModelInstanceBoolean } from "@rive-app/react-webgl2";
 
 export default function LittlePlanet({
   size,
@@ -13,14 +8,11 @@ export default function LittlePlanet({
   ...props
 }) {
   const { rive, RiveComponent } = useRive({
-    src: "littlePlanet.riv",
-    stateMachines: "Little Planet SM",
+    src: "little_planet.riv",
+    stateMachines: "LITTLE PLANET SM",
     autoplay: true,
     autoBind: true,
     useOffscreenRenderer: true,
-    layout: new Layout({
-      fit: Fit.Contain,
-    }),
   });
   const viewModelInstance = rive?.viewModelInstance;
 
