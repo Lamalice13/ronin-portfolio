@@ -12,8 +12,8 @@ export function Stars({
   return (
     <StarSvg
       aria-hidden={ariaHidden}
-      className={`absolute star-glow ${size} ${left} ${bottom} ${zIndex} ${animate}`}
-      style={{ animationDelay: delay }}
+      className={`absolute star-glow ${size} ${zIndex} ${animate}`}
+      style={{ animationDelay: delay, left: left, bottom: bottom }}
     />
   );
 }
