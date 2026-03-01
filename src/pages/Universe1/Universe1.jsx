@@ -9,7 +9,6 @@ import NaineBlanche from "./components/Stars/NaineBlanche";
 import Header from "./components/Header/Header";
 import Sun from "./components/Stars/Sun";
 import LittlePlanet from "./components/Stars/LittlePlanet";
-
 import { starData } from "./config/starsData";
 import { Stars } from "./components/Stars/Stars";
 import FlyingStar from "./components/Stars/FlyingStar";
@@ -85,12 +84,7 @@ export default function Universe1() {
         <Stars aria-hidden="true" className="z-0" key={i} {...star} />
       ))}
 
-      {/* <Title className="absolute top-1/2 left-1/2 w-1/3 h-1/3" />
-
-        <Flag
-          aria-hidden="true"
-          className="absolute top-1/2 left-1/2 w-1/3 h-1/3"
-        /> */}
+      {/* <Title className="absolute top-1/2 left-1/2 w-1/3 h-1/3" />*/}
 
       <GrandeOurse aria-hidden="true" className="z-0" {...grandeOurseData} />
       <NaineBlanche aria-hidden="true" className="z-0" {...naineBlancheData} />
