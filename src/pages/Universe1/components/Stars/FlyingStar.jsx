@@ -1,4 +1,4 @@
-import { useRive } from "@rive-app/react-webgl2";
+import { useRive } from "@rive-app/react-canvas";
 import { useEffect } from "react";
 
 export default function FlyingStar({ riveFile, interval, delay, ...props }) {
@@ -6,8 +6,6 @@ export default function FlyingStar({ riveFile, interval, delay, ...props }) {
     riveFile: riveFile,
     stateMachines: "STAR SM",
     autoBind: true,
-    useOffscreenRenderer: true,
-    autoplay: true,
   });
 
   useEffect(() => {

@@ -5,11 +5,11 @@ export default function NaineBlanche({
   top,
   right,
   className,
-  ...props
+  ariaHidden: hidden,
 }) {
   return (
     <NaineBlancheSvg
-      {...props}
+      aria-hidden={hidden}
       className={`absolute naine-blanche-glow ${className} ${size} ${top} ${right}`}
     />
   );
